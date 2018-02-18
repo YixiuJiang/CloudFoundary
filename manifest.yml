@@ -1,0 +1,10 @@
+---
+applications:
+- name: cf-springboot
+  memory: 768M
+  instances: 1
+  random-route: true
+services:
+  - mydb
+env:
+  spring_jpa_hibernate_ddl-auto: update
